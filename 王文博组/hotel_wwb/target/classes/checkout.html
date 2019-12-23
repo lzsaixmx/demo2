@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html xmlns="demo.css">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+   <link href="css/demo.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#form').ffform({ animation: 'flip', submitButton: '#submit', validationIndicator: '#validation',
+            	errorIndicator: '#error', successIndicator: '#success', 'fields': [{ 'id': 'name', required: true, requiredMsg: 'Name is required', type: 'alpha', validate: true, msg: 'Invalid Name' },
+            		{ 'id': 'email', required: true, requiredMsg: 'E-Mail is required', type: 'email', validate: true, msg: 'Invalid E-Mail Address' }, { 'id': 'phone', required: false, type: 'custom', 
+            			validate: false, msg: 'Invalid Phone #' }, { 'id': 'message', required: false, type: 'text', validate: false, msg: ''}] });
+        });
+    </script>
+</head>
+<body class="bounceIn animated">
+    <section id="getintouch" class="rotateInUpLeft animated">
+        <div class="container" style="border-bottom: 0;">
+            <h1>
+                <span>欢迎使用！!</span>
+            </h1>
+        </div>
+        <div class="container">
+            <form class="contact" action="CheckoutServlet" method="post" id="form">
+            <div class="row clearfix">
+                <div class="lbl">
+                    <label for="username">用户名</label>
+                </div>
+                <div class="ctrl">
+                    <input type="text" id="name" th:value=${userName} name="username" data-required="true" data-validation="text"
+                        data-msg="Invalid Name" placeholder="用户名">
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="lbl">
+                    <label for="title"> 房间名</label>
+                </div>
+                <div class="ctrl">
+                    <input type="text" id="room" name="room" data-required="true" data-validation="email"
+                        data-msg="Invalid E-Mail" placeholder="房间名" list="browsers">
+                        <datalist id="browsers">
+                <option value="总体套房">
+                <option value="情侣套房">
+                <option value="简约精品房">
+                <option value="精品二人房">
+                <option value="商务办公房">
+              </datalist>
+                </div>
+            </div>
+           
+            <div class="row clearfix">
+                <div class="lbl">
+                    <label for="email">电话</label>
+                </div>
+                <div class="ctrl">
+                    <input type="text" id="phone" name="phone" data-required="true" data-validation="custom"
+                        data-msg="Invalid Phone #" placeholder="电话">
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="lbl">
+                    <label for="subject"> 日期</label>
+                </div>
+                <div class="ctrl">
+                    <input type="date" name="subject" id="subject" placeholder="日期">
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="lbl">
+                    <label for="message">备注</label>
+                </div>
+                <div class="ctrl">
+                    <textarea id="message" name="message" rows="6" cols="10"></textarea>
+                </div>
+            </div>
+            <div class="row  clearfix">
+                <div class="span10 offset2">
+                    <input type="submit" class="submit" value="提交">
+                    <a href="HomeServlet"><input type="button" class="submit" value="返回主页"></a>
+                </div>
+            </div>    
+            </form>
+            </div>
+    </section> 
+</body>
+</html>

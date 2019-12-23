@@ -1,0 +1,322 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style type="text/css">
+.ccl {
+	color: red;
+}
+</style>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>注册</title>
+<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+      <title>注册</title>
+      <link rel="stylesheet" type="text/css"
+        href="css/MyElong2014_login.css">
+</head>
+<body
+  style="background-image: url('imges/bj.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+
+
+
+  <!-- =====================content start===================== -->
+
+  <div class="head">
+    <div class="logo" id="RedirectHomeSite">
+      <img src="imges/erweima.jpg" alt=""
+        style="width: 80px; height: 80px;" />
+    </div>
+  </div>
+
+  <div class="container" id="NewUserUp">
+    <h1 class="title">
+      <label>注册新会员</label> <span>已有账号，</span> <a href="login.html">直接登录</a>
+    </h1>
+    <!-- 开始注册 -->
+    <form action="" method="post" id="register">
+      <ul class="FillMge" id="regBaseMessage">
+        <li class="phonenum_wrap">
+          <p>
+            <span class="cf00">*</span>用户名：
+          </p> <span id="useras"><input class="w150" id="email"
+            name="userName" onclick="user()" /></span> <span><small
+            class="ccl" id="ddl1"></small></span>
+        </li>
+        <li class="phonenum_wrap">
+          <p>
+            <span class="cf00">*</span>身份证：
+          </p> <span id="cardas"><input class="w150" id="email"
+            name="card" onclick="user()" /></span> <span><small
+            class="ccl" id="ddl2"></small></span>
+        </li>
+        <li>
+          <p>
+            <span class="cf00">*</span>姓名：
+          </p> <span id="nameas"><input class="w150" id="email"
+            name="name" onclick="user()" /></span> <span><small
+            class="ccl" id="ddl3"></small></span>
+        </li>
+        <li>
+          <p>
+            <span class="cf00">*</span>密码：
+          </p> <span id="pwd1"><input class="w150" id="email"
+            type="password" name="pwd1" onclick="user()" /></span> <span><small
+            class="ccl" id="ddl4"></small></span>
+        </li>
+        <li>
+          <p>
+            <span class="cf00">*</span>确认密码：
+          </p> <span id="pwd2"><input class="w150" id="email"
+            type="password" name="pwd2" onclick="user()" onkeyup="sss()" /></span>
+          <span id="ccc"><small class="ccl" id="ddl5"></small></span>
+        </li>
+        <li>
+          <p>
+            <span class="cf00">*</span>出生年月：
+          </p> <span id="dateas"><input type="date" class="w150"
+            id="email" name="date" onclick="user()" /></span> <span><small
+            class="ccl" id="ddl6"></small></span>
+        </li>
+        <li class="pass_level">
+          <p>
+            <span class="cf00">*</span>地址：
+          </p> <span id="siteas"><input class="w150" id="email"
+            name="site" onclick="user()" /></span> <span><small
+            class="ccl" id="ddl7"></small></span>
+        </li>
+        <li>
+          <p>
+            <span class="cf00">*</span>电话：
+          </p> <span> <span id="phoneNum" class="phonenum"> <span
+              id="phoneType" value="1">中国大陆+86</span> <!-- <ul id="phoneTypeList" style="display: none">
+              </ul> -->
+          </span> <span id="phoneas"><input class="w150 phone_input"
+              id="mobile" maxlength="11" isDynamic=true name="phone"
+              onclick="user()" onkeydown="downfn()" /></span>
+        </span> <span><small class="ccl" id="ddl8"></small></span>
+        </li>
+        <li>
+          <p></p> <span class="promotion_ipt"> <input
+            type="checkbox" checked="checked"
+            id="getSalesPromotionMsgCheckBox" name="push" class="w20" />同意接受发送的促销信息。
+        </span>
+        </li>
+      </ul>
+
+
+      <div class="ml135 agree">
+        <input type="checkbox" name="cbox" id="isHadReadItems">同意王文博的服务条款
+
+
+        
+      </div>
+
+      <div class="ml135" style="margin-right: 10px;">
+        <input type="submit" value="立即注册" onclick="reg()"
+          style="width: 250px; font: 18px Microsoft YaHei; display: block; height: 40px; text-align: center; line-height: 40px; background-color: #ff8800; border-radius: 2px; margin-top: 20px;">
+      </div>
+    </form>
+    <!-- 完成注册    -->
+  </div>
+
+
+  <script type="text/javascript">
+			var RegisterController = {
+				viewModel : {
+					"cardChildType" : [ {
+						"cardProxyId" : "ZD",
+						"cardType" : "19",
+						"childCardName" : "\u827A\u9F99\u5361"
+					} ],
+					"cardParentType" : [
+							{
+								"cardName" : "\u94F6\u884C\u5361\u7C7B",
+								"display" : true,
+								"key" : "12",
+								"order" : true
+							},
+							{
+								"cardName" : "\u9152\u5E97\u5408\u4F5C\u7C7B",
+								"display" : true,
+								"key" : "17",
+								"order" : true
+							},
+							{
+								"cardName" : "\u65E0\u7EBF\u901A\u8BAF\u7C7B",
+								"display" : true,
+								"key" : "13",
+								"order" : true
+							},
+							{
+								"cardName" : "\u8D2D\u7269\u6D88\u8D39\u7C7B",
+								"display" : true,
+								"key" : "14",
+								"order" : true
+							},
+							{
+								"cardName" : "\u822A\u7A7A\u7C7B",
+								"display" : true,
+								"key" : "15",
+								"order" : true
+							},
+							{
+								"cardName" : "\u5176\u4ED6",
+								"display" : true,
+								"key" : "16",
+								"order" : true
+							},
+							{
+								"cardName" : "\u6240\u6709\u8054\u540D\u5361[\u6309\u9996\u5B57\u62FC\u97F3\u6392\u5E8F]",
+								"display" : true,
+								"key" : "11",
+								"order" : true
+							} ],
+					"cardParentTypeValue" : 0,
+					"isCht" : false,
+					"isHaveCardReg" : 0,
+					"isPersonCollect" : false
+				},
+				regDes : {
+					"RegSystemMobileError" : "\u8FD9\u4E2A\u53F7\u7801\u5DF2\u88AB\u4F7F\u7528\u3002\u4E3A\u4FDD\u62A4\u60A8\u7684\u4E2A\u4EBA\u4FE1\u606F\u51C6\u786E\u5B89\u5168\uFF0C\u8BF7\u8054\u7CFB\u6211\u4EEC\u7684\u5BA2\u6237\u670D\u52A1\u70ED\u7EBF4009-333-333\u8F6C5\u3002",
+					"SmsCodeSendFail" : "\u9A8C\u8BC1\u7801\u53D1\u9001\u5931\u8D25\uFF0C\u70B9\u51FB\u91CD\u65B0\u83B7\u53D6",
+					"RegValidateEmail_Empty_Error" : "\u90AE\u7BB1\u4E0D\u80FD\u4E3A\u7A7A\u3002",
+					"RegValidateEmail_Input_Error" : "\u90AE\u7BB1\u8F93\u5165\u9519\u8BEF\uFF0C\u8BF7\u6838\u5BF9\u540E\u91CD\u65B0\u8F93\u5165\u3002",
+					"RegValidateRePassword_Empty_Error" : "\u8BF7\u518D\u6B21\u8F93\u5165\u5BC6\u7801\u3002",
+					"SmsCode_ReachCountLimit" : "\u60A8\u5DF2\u8FBE\u5230\u4ECA\u5929\u83B7\u53D6\u9A8C\u8BC1\u7801\u7684\u6700\u9AD8\u6B21\u6570",
+					"lang" : "cn",
+					"RegValidateSMSCode_Empty_Error" : "\u8BF7\u586B\u5199\u77ED\u4FE1\u9A8C\u8BC1\u7801",
+					"RegValidatePassword_Email_Mobile_Error" : "\u5BC6\u7801\u4E0E\u5DF2\u5F55\u5165\u7684\u624B\u673A\u53F7\u6216\u90AE\u7BB1\u76F8\u4F3C\u3002",
+					"RegSystemEaiError" : "\u7531\u4E8E\u7CFB\u7EDF\u66F4\u65B0\u539F\u56E0\uFF0C\u73B0\u5728\u4E0D\u80FD\u6B63\u5E38\u6CE8\u518C\uFF0C\u4E0D\u8FC7\u60A8\u4ECD\u53EF\u4EE5\u6309\u7167\u7F51\u7AD9\u63D0\u793A\u6B63\u5E38\u9884\u8BA2\u3002",
+					"RegValidateMobile_HadReg_Error" : "\u624B\u673A\u53F7\u5DF2\u88AB\u4F7F\u7528\uFF0C\u8BF7\u66F4\u6362\u5176\u4ED6\u53F7\u7801\u3002",
+					"RegElongCard_Empty_Error" : "\u8BF7\u8F93\u5165\u6B63\u786E\u7684\u827A\u9F99\u5361\u5361\u53F7\u3002",
+					"RegSystemEmailError" : "\u8FD9\u4E2Aemail\u5730\u5740\u5DF2\u4F7F\u7528\u3002\u5982\u679C\u60A8\u8F93\u5165\u7684\u66F4\u65B0email\u4FE1\u606F\u662F\u51C6\u786E\u7684\uFF0C\u4E3A\u4FDD\u62A4\u60A8\u7684\u4E2A\u4EBA\u4FE1\u606F\u51C6\u786E\u5B89\u5168\uFF0C\u8BF7\u8054\u7CFB\u6211\u4EEC\u7684\u5BA2\u6237\u670D\u52A1\u70ED\u7EBF4009-333-333\u8F6C5\u3002",
+					"SmsCode_GetSmsAfter" : "\u79D2\u540E\u91CD\u65B0\u83B7\u53D6",
+					"RegElongCard_Input_Error" : "\u8BF7\u8F93\u5165\u6B63\u786E\u7684\u827A\u9F99\u5361\u5361\u53F7\u3002",
+					"RegValidateEmail_Yahoo_Error" : "\u96C5\u864E\u90AE\u7BB1\u5373\u5C06\u505C\u6B62\u670D\u52A1\uFF0C\u8BF7\u66F4\u6362\u90AE\u7BB1\u6CE8\u518C\u3002",
+					"SmsCode_GetSmsCodeDes" : "\u83B7\u53D6\u77ED\u4FE1\u9A8C\u8BC1\u7801",
+					"SmsCodeDisabled" : "\u9A8C\u8BC1\u7801\u5DF2\u5931\u6548\uFF0C\u8BF7\u91CD\u65B0\u83B7\u53D6",
+					"RegValidateEmailInfo" : "\u586B\u5199\u5E76\u9A8C\u8BC1\u90AE\u7BB1\uFF0C\u989D\u5916\u83B7\u5F97100\u5143\u827A\u9F99\u6D88\u8D39\u5238\u3002",
+					"RegValidateCode_Empty_Error" : "\u9A8C\u8BC1\u7801\u4E0D\u80FD\u4E3A\u7A7A\u3002",
+					"RegValidateMobileInfo" : "\u8BF7\u6B63\u786E\u586B\u5199\u60A8\u7684\u624B\u673A\u53F7\u7801\uFF0C\u4EE5\u4FBF\u53CA\u65F6\u786E\u8BA4\u9884\u8BA2\u4FE1\u606F\u3002",
+					"RegValidateRePassword_Reapt_Error" : "\u4E24\u6B21\u5BC6\u7801\u8F93\u5165\u4E0D\u4E00\u81F4\uFF0C\u8BF7\u91CD\u65B0\u8F93\u5165\u3002",
+					"RegValidateCode_Input_Error" : "\u8BF7\u6B63\u786E\u8F93\u5165\u9A8C\u8BC1\u7801\u3002",
+					"RegValidatePasswordInfo" : "6-30\u4E2A\u5B57\u7B26\u6216\u6570\u5B57\u7EC4\u6210",
+					"RegValidatePassword_Empty_Error" : "\u5BC6\u7801\u4E0D\u80FD\u4E3A\u7A7A\u3002",
+					"RegValidatePassword_Input_Error" : "6-30\u4E2A\u5B57\u7B26\u6216\u6570\u5B57\u7EC4\u6210\uFF0C\u8BF7\u91CD\u65B0\u8F93\u5165\u3002",
+					"RegSystemDefault" : "\u7CFB\u7EDF\u7E41\u5FD9\uFF0C\u8BF7\u7A0D\u540E\u518D\u8BD5\uFF01",
+					"RegValidateMobile_Input_Error" : "\u8BF7\u8F93\u5165\u6B63\u786E\u7684\u624B\u673A\u53F7\u3002",
+					"RegValidateRePasswordInfo" : "\u8BF7\u518D\u6B21\u8F93\u5165\u5BC6\u7801\u3002",
+					"RegValidate_AgeeRules_Info" : "\u540C\u610F\u6761\u6B3E\u5E76\u6CE8\u518C",
+					"RegValidateMobile_Empty_Error" : "\u624B\u673A\u4E0D\u80FD\u4E3A\u7A7A\u3002",
+					"RegUinonCard_Error" : "\u8BF7\u8F93\u5165\u6B63\u786E\u7684\u8054\u540D\u5361\u5361\u53F7\u3002",
+					"RegValidateCodeInfo" : "\u8BF7\u8F93\u5165\u9A8C\u8BC1\u7801\u3002",
+					"RegValidateEamil_HadReg_Error" : "\u90AE\u7BB1\u5DF2\u88AB\u4F7F\u7528\uFF0C\u8BF7\u66F4\u6362\u5176\u4ED6\u90AE\u7BB1\u3002",
+					"SmsCodeOutOfDate" : "\u9A8C\u8BC1\u7801\u5DF2\u5931\u6548\uFF0C\u8BF7\u91CD\u65B0\u83B7\u53D6",
+					"SmsCode_MultiPhone" : "\u5BF9\u4E0D\u8D77\uFF0C\u60A8\u7684\u624B\u673A\u53F7\u7ED1\u5B9A\u591A\u4E2A\u827A\u9F99\u8D26\u53F7\uFF0C\u8BF7\u66F4\u6362\u624B\u673A\u53F7",
+					"IsHavingRegUser" : "\u6CE8\u518C\u4E2D...",
+					"SmsCode_OtherError" : "\u51FA\u73B0\u5176\u4ED6\u9519\u8BEF\uFF0C\u8BF7\u91CD\u65B0\u83B7\u53D6",
+					"SmsCodeTimeLimit" : "\u4E00\u5206\u949F\u5185\u83B7\u53D6\u9A8C\u8BC1\u7801\u592A\u9891\u7E41\uFF0C\u8BF7\u7A0D\u540E\u83B7\u53D6",
+					"SmsCodeInputError" : "\u9A8C\u8BC1\u7801\u8F93\u5165\u9519\u8BEF",
+					"RegValidate_ReadAndCheck_Rules" : "\u8BF7\u8BA4\u771F\u9605\u8BFB\u76F8\u5173\u6761\u6B3E\u5E76\u52FE\u9009\u3002"
+				},
+				urlVersion : "201401010800",
+				jsPath : "..\/..\/..\/passport\/js\/",
+				basePath : "",
+				curDate : "2019-11-22"
+			};
+			var pageController = RegisterController;
+			function user() {
+				if ($("#useras>input").val() == "") {
+					ddl1.innerText = "用户名不能为空!";
+				} else {
+					ddl1.innerText = "";
+				}
+				if ($("#cardas>input").val() == "") {
+					ddl2.innerText = "身份证号不能为空!";
+				} else {
+					ddl2.innerText = "";
+				}
+				if ($("#cardas>input").val() == "") {
+					ddl2.innerText = "身份证号不能为空!";
+				} else {
+					ddl2.innerText = "";
+				}
+				if ($("#nameas>input").val() == "") {
+					ddl3.innerText = "姓名不能为空!";
+				} else {
+					ddl3.innerText = "";
+				}
+				if ($("#pwd1>input").val() == "") {
+					ddl4.innerText = "密码不能为空!";
+				} else {
+					ddl4.innerText = "";
+				}
+				if ($("#pwd2>input").val() == "") {
+					ddl5.innerText = "密码不能为空!";
+				} else {
+					ddl5.innerText = "";
+				}
+				if ($("#dateas>input").val() == "") {
+					ddl6.innerText = "出生年月不能为空!";
+				} else {
+					ddl6.innerText = "";
+				}
+				if ($("#siteas>input").val() == "") {
+					ddl7.innerText = "地址不能为空!";
+				} else {
+					ddl7.innerText = "";
+				}
+				if ($("#phoneas>input").val() == "") {
+					ddl8.innerText = "电话号码不能为空!";
+				} else {
+					ddl8.innerText = "";
+				}
+			}
+			function downfn() {
+				if ($("#phoneas>input").val() == "") {
+					ddl8.innerText = "电话号码不能为空!";
+				} else {
+					ddl8.innerText = "";
+				}
+			}
+			function sss() {
+				var pwd1 = $("#pwd1>input").val();
+				if ($("#pwd2>input").val() == pwd1) {
+					ddl5.innerText = "√";
+				} else {
+					ddl5.innerText = "×";
+				}
+			}
+			function reg() {
+				var s = document.getElementById("isHadReadItems");
+				var b = $("#pwd1>input").val()==$("#pwd2>input").val()
+				if ($(".ccl").val() == "" && s.checked && b) {
+					if ($(".w150").val() == "") {
+						alert("带*号的选项为必选选项!")
+					} else {
+						$("#register").attr("action", "RegServlet")
+					}
+					
+				} else {
+					if(!b){
+						alert("密码输入错误!")
+					}
+					if ($(".w150").val() == "") {
+						alert("带*号的选项为必选选项!")
+					}
+				}
+			}
+		</script>
+
+  <script type="text/javascript" src="js/jquery1.8.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+  <!--<script src="https://sec.ly.com/fp/index.js?v=0131"></script>-->
+  <script type="text/javascript" src="js/duhurisk.min.js"></script>
+  <script type="text/javascript" src="js/require2.1.16.min.js"></script>
+
+</body>
+</html>

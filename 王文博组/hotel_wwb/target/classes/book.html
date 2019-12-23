@@ -1,0 +1,499 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="baidu-site-verification" content="iVMS9I8xOG" />
+
+<title>王文博酒店</title>
+<meta name="keywords">
+<meta charset="utf-8">
+  <link type="text/css" rel="stylesheet" href="css/reset.css" />
+  <link href="css/Index.css" rel="stylesheet" type="text/css" />
+  
+  <script src="js/1.9.1jquery.min.js"></script>
+  <!--banner-->
+  <script src="js/MSClass.js" type="text/javascript"></script>
+  <!--news-->
+  <script src="js/afd_Index.js" type="text/javascript"></script>
+  <!--hzhb-->
+  
+  <style>
+body {
+	position: relative;
+}
+
+#section1 {
+	padding-top: 50px;
+	height: 500px;
+	background-color: #FFDCD4;
+}
+
+#section2 {
+	padding-top: 50px;
+	height: 500px;
+	color: #fff;
+	background-color: #673ab7;
+}
+
+#section3 {
+	padding-top: 50px;
+	height: 500px;
+	color: #fff;
+	background-color: #ff9800;
+}
+
+#section41 {
+	padding-top: 50px;
+	height: 500px;
+	color: #fff;
+	background-color: #00bcd4;
+}
+
+#section42 {
+	padding-top: 50px;
+	height: 500px;
+	color: #fff;
+	background-color: #009688;
+}
+ label { float: left; width: 10em; margin-right: 1em; text-align: right; }
+</style>
+</head>
+
+<body style="background-color: #e8eff6;" data-spy="scroll"
+  data-target=".navbar" data-offset="50">
+  <!--头部开始-->
+  <div class="header">
+    <div class="header_top">
+      <div class="container">
+        <p>欢迎光临XXXX酒店！</p>
+        <ul>
+          <li class="last"><a rel="nofollow" href="">收藏</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container header_center">
+      <dl>
+        <dt>
+          <a href="/"> <img src="imges/banner32.jpg" width="350"
+            height="101"></a>
+        </dt>
+        <dd>
+         
+        </dd>
+      </dl>
+      <div class="phone">
+        <p>咨询王文博：</p>
+        <h3>383843809438</h3>
+        <br />
+        <p>抢房热线：</p>
+        <h3>383843809438</h3>
+        <br />
+         <h3 th:text="'用户: '+${userName}" style="font-size: 16px;"><p><a href="ShowLoginServlet">登录</a></p><p>|</p><p><a href="ShowRegServlet">注册</a></p></h3><p>|</p><a href="OutServlet"><p>退出</p></a>
+      </div>
+    </div>
+
+
+    <div class="header_nav" style="">
+      <div class="container">
+        <div id=div_center>
+          <ul id="zzjs_net">
+            <li class="cur"><a href="HomeServlet">首页</a></li>
+            <li><a href="BookServlet">酒店预订</a></li>
+            <li><a href="ServicesServlet">酒店服务</a></li>
+            <li><a href="#" class="alert">企业客户预订</a></li>
+            <li><a href="#" class="alert">优惠促销</a></li>
+            <li><a href="#" class="alert">家宾会</a></li>
+            <li><a href="#" class="alert">员工风采</a></li>
+            <li><a href="starter.html">关于本酒店</a></li>
+            <li><a href="SendServlet">评论</a></li>
+            <li><a href="#" class="alert">王文博简介</a></li>
+           <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">联系我们 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="ShowCtarServlet">联系客服</a></li>
+            <li><a href="ShowCheckoutServlet">预留意见</a></li>
+          </ul>
+        </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--头部结束-->
+  <!-- 预订房间开始  -->
+  <div align="center">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav" style="font-size: 25px;">
+            <li><a href="#section1" style="color: green;">标准间</a></li>
+            <li><a href="#section2" style="color: red;">三人间</a></li>
+            <li><a href="#section3" style="color: blue;">大床房</a></li>
+            <li class="dropdown"><a class="dropdown-toggle"
+              data-toggle="dropdown" href="#" style="color: purple;">情趣房
+                <span class="caret"></span>
+            </a>
+              <ul class="dropdown-menu">
+                <li><a href="#section41" style="color: gray;">豪华大床房</a></li>
+                <li><a href="#section42" style="color: green;">王文博套房</a></li>
+              </ul></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </nav>
+  </div>
+  <div id="section1" class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" style="display: inline-block; float: left">
+          <img src="imges/bzj.jpg"
+            style="width: 480px; margin-top: 40px" />
+        </div>
+        <div class="col-md-8"
+          style="display: inline-block; margin-top: 80px; margin-left: 50px; float: left; width: 580px;  height: 320px">
+
+          <div align="center">
+          <div>
+            <h2>房间预订</h2>
+          </div>
+            <form action="SuccessServlet" method="post">
+      <table align="center" >
+         <caption></caption>
+          <tr>
+             <td>入住日期：</td>
+             <td><input type="datetime-local" name="in" placeholder="请输入入住日期"></td>
+          </tr>      
+          <tr>
+             <td>离店日期：</td>
+             <td><input type="datetime-local" name="out" placeholder="请输入离店日期"></td>
+          </tr>      
+          <tr>
+             <td>姓名：</td>
+             <td><input type="text" name="name" placeholder="请输入姓名"></td>
+          </tr>
+          <tr>
+             <td>电话号码：</td>
+             <td><input type="text" name="sf" placeholder="请输入电话号码"></td>
+          </tr> 
+          <tr>
+             <td colspan="2" align="center">
+                <input type="submit" value="预订">
+             </td>
+          </tr> 
+        </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+  <div id="section2" class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" style="display: inline-block; float: left">
+          <img src="imges/bzj.jpg"
+            style="width: 480px; margin-top: 40px" />
+        </div>
+        <div class="col-md-8"
+          style="display: inline-block; margin-top: 80px; margin-left: 50px; float: left; width: 580px; height: 320px">
+
+          <div align="center">
+          <div>
+            <h2>三人间预订</h2>
+          </div>
+            <form action="SuccessServlet" method="post">
+      <table align="center" >
+         <caption></caption>
+          <tr>
+             <td>入住日期：</td>
+             <td><input type="datetime-local" name="in" placeholder="请输入入住日期"></td>
+          </tr>      
+          <tr>
+             <td>离店日期：</td>
+             <td><input type="datetime-local" name="out" placeholder="请输入离店日期"></td>
+          </tr>      
+          <tr>
+             <td>姓名：</td>
+             <td><input type="text" name="name" placeholder="请输入姓名"></td>
+          </tr>
+          <tr>
+             <td>电话号码：</td>
+             <td><input type="text" name="sf" placeholder="请输入电话号码"></td>
+          </tr> 
+          <tr>
+             <td colspan="2" align="center">
+                <input type="submit" value="预订">
+             </td>
+          </tr> 
+        </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+ 
+  <div id="section3" class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" style="display: inline-block; float: left">
+          <img src="imges/bzj.jpg"
+            style="width: 480px; margin-top: 40px" />
+        </div>
+        <div class="col-md-8"
+          style="display: inline-block; margin-top: 80px; margin-left: 50px; float: left; width: 580px;  height: 320px">
+
+          <div align="center">
+          <div>
+            <h2>大床房预订</h2>
+          </div>
+            <form action="SuccessServlet" method="post">
+      <table align="center">
+         <caption></caption>
+          <tr>
+             <td>入住日期：</td>
+             <td><input type="datetime-local" name="in" placeholder="请输入入住日期"></td>
+          </tr>      
+          <tr>
+             <td>离店日期：</td>
+             <td><input type="datetime-local" name="out" placeholder="请输入离店日期"></td>
+          </tr>      
+          <tr>
+             <td>姓名：</td>
+             <td><input type="text" name="name" placeholder="请输入姓名"></td>
+          </tr>
+          <tr>
+             <td>电话号码：</td>
+             <td><input type="text" name="sf" placeholder="请输入电话号码"></td>
+          </tr> 
+          <tr>
+             <td colspan="2" align="center">
+                <input type="submit" value="预订">
+             </td>
+          </tr> 
+        </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div id="section41" class="container-fluid">
+   <div class="container">
+      <div class="row">
+        <div class="col-md-4" style="display: inline-block; float: left">
+          <img src="imges/bzj.jpg"
+            style="width: 480px; margin-top: 40px" />
+        </div>
+        <div class="col-md-8"
+          style="display: inline-block; margin-top: 80px; margin-left: 50px; float: left; width: 580px;  height: 320px">
+
+          <div align="center">
+          <div>
+            <h2>情趣房预订</h2>
+          </div>
+            <form action="SuccessServlet" method="post">
+      <table align="center" >
+         <caption></caption>
+          <tr>
+             <td>入住日期：</td>
+             <td><input type="datetime-local" name="in" placeholder="请输入入住日期"></td>
+          </tr>      
+          <tr>
+             <td>离店日期：</td>
+             <td><input type="datetime-local" name="out" placeholder="请输入离店日期"></td>
+          </tr>      
+          <tr>
+             <td>姓名：</td>
+             <td><input type="text" name="name" placeholder="请输入姓名"></td>
+          </tr>
+          <tr>
+             <td>电话号码：</td>
+             <td><input type="text" name="sf" placeholder="请输入电话号码"></td>
+          </tr> 
+          <tr>
+             <td colspan="2" align="center">
+                <input type="submit" value="预订">
+             </td>
+          </tr> 
+        </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div id="section42" class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" style="display: inline-block; float: left">
+          <img src="imges/bzj.jpg"
+            style="width: 480px; margin-top: 40px" />
+        </div>
+        <div class="col-md-8"
+          style="display: inline-block; margin-top: 80px; margin-left: 50px; float: left; width: 580px;  height: 320px">
+
+          <div align="center">
+          <div>
+            <h2>套房预订</h2>
+          </div>
+           <form action="SuccessServlet" method="post">
+      <table align="center" >
+         <caption></caption>
+          <tr>
+             <td>入住日期：</td>
+             <td><input type="datetime-local" name="in" placeholder="请输入入住日期"></td>
+          </tr>      
+          <tr>
+             <td>离店日期：</td>
+             <td><input type="datetime-local" name="out" placeholder="请输入离店日期"></td>
+          </tr>      
+          <tr>
+             <td>姓名：</td>
+             <td><input type="text" name="name" placeholder="请输入姓名"></td>
+          </tr>
+          <tr>
+             <td>电话号码：</td>
+             <td><input type="text" name="sf" placeholder="请输入电话号码"></td>
+          </tr> 
+          <tr>
+             <td colspan="2" align="center">
+                <input type="submit" value="预订">
+             </td>
+          </tr> 
+        </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+<script>
+	$('body').on('activate.bs.scrollspy', function() {
+		var currentItem = $(".nav li.active > a").text();
+		console.log(currentItem);
+	});
+</script>
+
+
+
+
+<!-- 预订房间结束  -->
+
+
+
+<script type="text/javascript" src="js/lrtk.js"></script>
+<!--在线客服-->
+<script type="text/javascript">
+	$(function() {
+		$("#hhService").fix({
+			float : 'right',
+			minStatue : false,
+			skin : 'green',
+			durationTime : 1000
+		})
+	});
+</script>
+<!--在线客服-->
+<!--客服-->
+<div class="scrollsidebar" id="scrollsidebar">
+  <div class="side_content">
+    <div class="side_list">
+      <div class="side_title">
+        <a title="隐藏" class="close_btn"><span>关闭</span></a>
+      </div>
+      <div class="side_center">
+        <div class="custom_service" style="width: 146px;">
+          <p>
+            <span>企业预订热线：波波电话</span> <a title="点击这里给我发消息" href=""
+              target="_blank"> </a>
+          </p>
+          <p>
+            <span>订房热线：联系王文博</span> <a title="点击这里给我发消息" href=""
+              target="_blank"> </a>
+          </p>
+          <p>
+            <span>投诉电话：吊死王文博</span> <a title="点击这里给我发消息"
+              href="http://wpa.qq.com/msgrd?v=3&amp;uin=279714003&amp;site=www.sz-lanhai.com&amp;menu=yes"
+              target="_blank"> </a>
+          </p>
+        </div>
+        <div class="msgserver">
+          <img src="imges/erweima.jpg"
+            style="width: 80px; height: 80px;"></img>
+          <p>
+
+            <a href="http://sz-lanhai.com/contact.html">联系王文博</a>
+          </p>
+        </div>
+      </div>
+      <div class="side_bottom"></div>
+    </div>
+  </div>
+  <div class="show_btn">
+    <span>在线客服</span>
+  </div>
+</div>
+<script type="text/javascript">
+	$(function() {
+		$("#scrollsidebar").fix({
+			float : 'right', //default.left or right
+			//minStatue : true,
+			skin : 'blue', //default.gray or blue
+			durationTime : 600
+		});
+	});
+	$(".alert").click(function(){
+  		alert("该功能暂未开放，请等本酒店2.0全新版本!!!")
+  	});
+</script>
+<script type="text/javascript">
+	$('[data-spy="scroll"]').each(function() {
+
+		var $spy = $(this).scrollspy('refresh')
+
+	})
+	
+</script>
+<!--客服-->
+<div class="g_ft f_fw">
+  <div class="content f_pr">
+    <div class="m_fnav ">
+      <a href="gxjsqyrd.html" title="高新技术企业认定">王文博</a>|<a
+        href="kjxmsb.html" title="科技项目申报">王文博</a>|<a
+        href="gongshangcs.html" title="工商财税">王文博</a>|<a
+        href="zhishichanquan.html" title="知识产权">wangweb</a>
+    </div>
+
+    <div class="f_ftcon">
+      <ul>
+        <li class="ftico1">备案号：<a
+          href="http://www.miitbeian.gov.cn/" title="苏ICP备19025706号-1"
+          target="_blank" rel="nofollow">苏ICP备19025706号-1</a></li>
+        <li class="ftico2">服务热线：</li>
+        <li class="ftico3">E-Mail：</li>
+        <li class="ftico4">QQ：</li>
+        <li class="ftico5">电话号码：</li>
+        <li class="ftico6">地址：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<script
+            type="text/javascript">
+									var cnzz_protocol = (("https:" == document.location.protocol) ? "https://"
+											: "http://");
+									document
+											.write(unescape("%3Cspan id='cnzz_stat_icon_1277938769'%3E%3C/span%3E%3Cscript src='"
+													+ cnzz_protocol
+													+ "s9.cnzz.com/z_stat.php%3Fid%3D1277938769%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+								</script></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+package cn.tedu.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import cn.tedu.dao.RoomDao;
+import cn.tedu.entity.Room;
+
+
+public class SuccessServlet extends HttpServlet {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String checkdate = request.getParameter("in");
+		String leavedate = request.getParameter("out");
+		String name = request.getParameter("name");
+		String phone = request.getParameter("sf");
+		Room room = new Room(0,checkdate,leavedate,name,phone);
+		RoomDao dao = new RoomDao();
+		dao.add(room);
+		response.sendRedirect(request.getContextPath()+"SuccessfullyServlet");
+	}
+
+}

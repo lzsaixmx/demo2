@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Blogin | beautiful and Minimal Blog Template  Designed & Coded </title>
+	<meta charset="utf-8">
+	<meta name="author" content="">
+	<link rel="stylesheet" type="text/css" href="../pxnt/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../pxnt/css/main.css">
+</head>
+<body>
+  		<header>
+			<div class="wrapper">
+				<a href="#"><img src="../pxnt/img/x.jpg" style=" width: 90px; height:75px;" class="h_logo" alt="Blogin" title=""></a>
+				<nav>
+					<ul class="main_nav">
+						<li class="current"><a href="index.html">首页</a></li>
+						<li><a href="../Blog.html">发布评论</a></li>
+						<li><a href="../../index.html">返回酒店</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header><!-- Header End -->
+
+	<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<p align="right" class="navbar-text">用户: 王文博</p>
+					</li>
+				</ul>
+			</div>
+
+	<section class="main wrapper">
+		<article>
+			<div class="article_image">
+				<a href="#">
+					<img src="image/1.jpg" alt="" title="">
+				</a>
+			</div>
+			<div class="post">
+				<h1 class="title">
+					<a href="#">豪华双人间</a>
+				</h1>
+				
+				<p>很漂亮的一家公寓，房间很大，有阳台，很宽敞明亮，设备很新很漂亮，卫生很干净，服务也周到热情，住的很满意,一如既往的住红源，
+				下次还要再到这里，只因为这里老板的热情周到，宾馆的整洁干净，价格合理。强烈推荐给大家</p>
+
+				<a class="read_more" href="#">时间<i class="read_more_arrow"></i> </a>
+				<span th:text=${a.createdStr} class="fa fa-calendar"
+                  > 2019-11-23 9:50</span>
+                  <div class="col-md-2">评论者: 王文博</div>
+			</div>
+		</article>
+
+		<article>
+			<div class="article_image">
+				<a href="#">
+					<img src="image/7.jpg" alt="" title="">
+				</a>
+			</div>
+			<div class="post">
+				<h1 class="title">
+					<a href="#">至尊套房</a>
+				</h1>
+
+				<p>Hello, the founder of the hotel is mainly bringing family to China to play. 
+				For three days, the parents and children are very satisfied. 
+				The intimate butlers come from time to time to ask what is needed.
+				 The hotel environment is not bad. In the evening, I will play with my son on the lawn table,
+				  and I will visit you next time.</p>
+
+				<a class="read_more" href="#">时间<i class="read_more_arrow"></i> </a>
+				<span th:text=${a.createdStr} class="fa fa-calendar"
+                  > 2019-11-22 11:50</span>
+                  <div class="col-md-2">评论者: Wang Wenbo</div>
+			</div>
+		</article>
+
+		<article>
+			<div class="article_image">
+				<a href="#">
+					<img src="image/4.jpg" alt="" title="">
+				</a>
+			</div>
+			<div class="post">
+				<h1 class="title">
+					<a href="#">精简单人间</a>
+				</h1>
+
+				<p>环境优美，地理位置好，交通方便，房间舒适卫生，服务人员很热情，乐于提供各种帮助，早餐丰富。
+				设施很人性化，网络高速信号好，窗外风景好。有特别的开床服务，房间小摆件的设计也很有特色。性价比不错，下次还要入住</p>
+
+				<a class="read_more" href="#">时间 <i class="read_more_arrow"></i> </a>
+				<span th:text=${a.createdStr} class="fa fa-calendar"
+                  > 2019-11-21 12:50</span>
+                  <div class="col-md-2">评论者: 王博博</div>
+			</div>
+		</article>
+
+		<article>
+			<div class="article_image">
+				<a href="#">
+					<img src="image/6.jpg" alt="" title="">
+				</a>
+			</div>
+			<div class="post">
+				<h1 class="title">
+					<a href="#">至尊套房</a>
+				</h1>
+
+				<p>环境优美，地理位置好，交通方便，房间舒适卫生，服务人员很热情，乐于提供各种帮助，早餐丰富。
+				设施很人性化，网络高速信号好，窗外风景好。有特别的开床服务，房间小摆件的设计也很有特色。性价比不错，下次还要入住</p>
+
+				<a class="read_more" href="#">时间<i class="read_more_arrow"></i> </a>
+				<span th:text=${a.createdStr} class="fa fa-calendar"
+                  > 2019-11-20 16:50</span>
+                  <div class="col-md-2">评论者: 王小博</div>
+			</div>
+		</article>
+
+		
+	</section><!-- Main End -->
+
+	<footer>
+		<div class="wrapper">
+			<img class="logo_footer" src="../pxnt/img/logo_footer.png" alt="Blogin" title="">
+			<ul class="social_profiles">
+				<li class="f"><a href="#" target="_blink"></a></li>
+				<li class="t"><a href="#" target="_blink"></a></li>
+				<li class="be"><a href="#" target="_blink"></a></li>
+				<li class="d"><a href="#" target="_blink"></a></li>
+			</ul>
+		</div>
+	</footer><!-- Footer End -->
+
+</body>
+</html>

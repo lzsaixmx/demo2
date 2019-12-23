@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" type="image/png" sizes="16x16"
+  href="plugins/images/favicon.png">
+<title>小博</title>
+
+<link href="WAN/bootstrap.min.css" rel="stylesheet">
+<link href="WAN/style.css" rel="stylesheet">
+<link href="WAN/blue-dark.css" id="theme" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+    <nav class="navbar navbar-default navbar-static-top m-b-0">
+      <div class="navbar-header">
+        <a class="navbar-toggle hidden-sm hidden-md hidden-lg "
+          href="javascript:void(0)" data-toggle="collapse"
+          data-target=".navbar-collapse"><i class="fa fa-bars"></i></a>
+        <div class="top-left-part">
+          <a class="logo" href="index.html"><strong><img
+              src="WAN/pixeladmin-logo.png" alt="home"></strong><span
+            class="hidden-xs">小博博员工信息</span></a>
+        </div>
+        <ul class="nav navbar-top-links navbar-right pull-right">
+          <li><a class="profile-pic" href="#"> <img
+              src="WAN/varun.jpg" alt="user-img"
+              width="36" class="img-circle"><b class="hidden-xs">小博</b>
+          </a></li>
+        </ul>
+      </div>
+
+    </nav>
+    <div class="navbar-default sidebar" role="navigation">
+      <div class="sidebar-nav navbar-collapse slimscrollsidebar">
+        <ul class="nav" id="side-menu">
+          <li style="padding: 10px 0 0;"><a href="index.html"
+            class="waves-effect"><em class="fa fa-clock-o fa-fw"
+              aria-hidden="true"></em><span class="hide-menu">酒店首页</span></a>
+          </li>
+          <li><a href="profile.html" class="waves-effect"><i
+              class="fa fa-user fa-fw" aria-hidden="true"></i><span
+              class="hide-menu">床位信息</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="page-wrapper">
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="white-box">
+          <h3 class="box-title">
+            员工信息
+            <div class="col-md-2 col-sm-4 col-xs-12 pull-right">
+              <select class="form-control pull-right row b-none">
+                <option>暂未开放</option>
+              </select>
+            </div>
+          </h3>
+          <div class="table-responsive">
+            <table class="table ">
+              <thead>
+                <tr>
+                  <th>编号</th>
+                  <th>名字</th>
+                  <th>部门</th>
+                  <th>电话</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr th:each="p : ${list}">
+                  <td class="txt-oflo" th:text=${p.id}>王</td>
+                  <td th:text=${p.name}>苟富贵</td>
+                  <td class="txt-oflo" th:text=${p.sector}>2</td>
+                  <td><span class="text-success"
+                    th:text=${p.contact}>123456</span></td>
+                  <td>Real Homes</td>
+                  <td>EXTENDED</td>
+                  <td>April 19</td>
+                </tr>
+                <tr th:remove="all">
+                  <td>Real Homes</td>
+                  <td>EXTENDED</td>
+                  <td>April 19</td>
+                  <td></td>
+                </tr>
+                <tr th:remove="all">
+                  <td>Medical Pro</td>
+                  <td>TAX</td>
+                  <td>April 20</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer text-center"> </footer>
+  </div>
+  </div>
+  <script src="WAN/custom.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $.toast({
+            heading:'Welcome to Pixel admin',
+            text: 'Use the predefined ones, or specify a custom position object.',
+            position: 'top-right',
+            loaderBg: '#ff6849',
+            icon: 'info',
+            hideAfter: 3500,
+            stack: 6
+        })
+    });
+    </script>
+</body>
+
+</html>

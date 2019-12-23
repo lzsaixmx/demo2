@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bootstrap Template</title>
+<meta name="viewport"
+  content="width=device-width,initial-scale=1,user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css"
+  href="bootstrap3/css/bootstrap.css">
+<link rel="stylesheet" type="text/css"
+  href="bootstrap3/font-awesome-4.7.0/css/font-awesome.css" />
+<link type="text/css" rel="stylesheet" href="css/reset.css" />
+  <link href="css/Index.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#d1 {
+	width: 300px;
+	height: 500px;
+	border: 1px solid black;
+	margin: 0 auto;
+	background-color: #efefef;
+    overflow: auto;
+}
+
+.c2 {
+	width: 200px;
+	height: 80px;
+	margin-left: 35px;
+}
+
+#d1>div {
+	
+}
+.input-group{
+  margin: 0 auto;
+}
+.c1{
+   margin-bottom: 0;
+   width: 35px;
+}
+.C10{
+   width: 40px;
+   height: 40px;
+}
+.c10:hover{
+  width: 55px;
+  height: 55px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+    <div class="header_top">
+      <div class="container">
+        <p>欢迎光临达内国际酒店！</p>
+        <ul>
+          <li class="last"><a rel="nofollow" href="">收藏</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container header_center">
+      <dl>
+        <dt>
+          <a href="/"> <img src="imges/banner32.jpg" width="350"
+            height="101"></a>
+        </dt>
+        <dd>
+          
+        </dd>
+      </dl>
+      <div class="phone">
+        <p>咨询王文博：</p>
+        <h3>383843809438X</h3>
+        <br />
+        <p>抢房热线：</p>
+        <h3>383843809438</h3>
+        <br />
+        <h3 th:text="'用户: '+${userName}" style="font-size: 16px;"><p><a href="ShowLoginServlet">登录</a></p><p>|</p><p><a href="ShowRegServlet">注册</a></p></h3><p>|</p><a href="OutServlet"><p>退出</p></a>
+      </div>
+    </div>
+
+
+    <div class="header_nav" style="">
+      <div class="container">
+        <div id=div_center>
+          <ul id="zzjs_net">
+            <li class="cur"><a href="HomeServlet">首页</a></li>
+            <li><a href="BookServlet">酒店预订</a></li>
+            <li><a href="ServicesServlet">酒店服务</a></li>
+            <li><a href="" class="alert">企业客户预订</a></li>
+            <li><a href="" class="alert">优惠促销</a></li>
+            <li><a href="" class="alert">家宾会</a></li>
+            <li><a href="" class="alert">员工风采</a></li>
+            <li><a href="starter">关于本酒店</a></li>
+            <li><a href="SendActionServlet">评论</a></li>
+            <li><a href="" class="alert">王文博简介</a></li>
+            <li><a href="ShowCtarServlet">联系王文博</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1 align="center">联系客服</h1>
+  <div>
+    <div id="d1">
+      <div>
+        <p class="c1">小w:</p>
+        <span><div class="c2">
+            <small>尊敬的用户，您好! 有什么可以帮助您的吗?</small>
+          </div></span>
+      </div>
+      <div th:each="li : ${list}">
+        <p class="c1" th:text="${li.userName}+': '">我: </p>
+        <span><div class="c2">
+            <small th:text=${li.ctarText}>你好! 在吗?</small>
+          </div></span>
+      </div>
+    </div>
+    <form action="" method="post" class="c11">
+    <div class="input-group input-group-lg" align="center">
+      <input type="text" class="form-control" name="text" placeholder="请输入内容" required autocomplete="off"> <input
+        type="image" src="images/123.gif" alt="Submit" class="c10">
+    </div>
+    </form>
+  </div>
+</body>
+<script type="text/javascript" src="bootstrap3/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap3/js/bootstrap.js"></script>
+<script type="text/javascript" src="bootstrap3/js/holder.js"></script>
+<script type="text/javascript" src="bootstrap3/js/html5shiv.min.js"></script>
+<script type="text/javascript" src="bootstrap3/js/css3-mediaqueries.js"></script>
+<script type="text/javascript" src="bootstrap3/js/respond.min.js"></script>
+<script type="text/javascript">
+	$(".c10").click(function(){
+		if($(".form-control").val()!=""){
+			$(".c11").attr("action","CtarServlet");
+		}
+	});
+	$('#d1').scrollTop($('#d1')[0].scrollHeight);
+	$(".alert").click(function(){
+  		alert("该功能暂未开放，请等本酒店2.0全新版本!!!")
+  	});
+</script>
+</html>

@@ -1,0 +1,25 @@
+package cn.tedu.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.thymeleaf.context.Context;
+
+import cn.tedu.utils.ThUtils;
+
+/**
+ * Servlet implementation class SeServlet
+ */
+public class SeServlet extends HttpServlet {
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		Context context = new Context();
+		String username = request.getParameter("username");
+		context.setVariable("user", username);
+		ThUtils.write("index", context, response);
+	}
+
+}

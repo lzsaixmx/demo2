@@ -1,0 +1,237 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>登录</title>
+<meta charset="utf-8">
+  <title>登录</title>
+
+  <link rel="stylesheet" type="text/css" href="css/EL_common.css">
+    <link rel="stylesheet" type="text/css"
+      href="css/myelong_login_2016.css">
+</head>
+<body>
+
+  <div></div>
+
+
+  <div class="head">
+    <div class="logo" id="RedirectHomeSite">
+      <img src="imges/erweima.jpg" style="width: 70px; height: 70px;"></img>
+    </div>
+  </div>
+
+  <div class="loginbox">
+
+    <div class="switch_btn" id="switchCodeLogin">
+      <a class="a_one" style="top: 0px; left: 0px;" method="QrCodeLogin"></a>
+      <a class="a_two" style="top: 0px; left: 50px;"
+        method="NormalLogin"></a>
+    </div>
+    <div class="pic">
+      <a
+        href="http://www.elong.com/promotion/web/elong_subject/index.html"
+        target="_blank"> <img src="imges/timg.jpg" width="620"
+        height="350" alt="常住30天" />
+      </a>
+    </div>
+
+    <!-- 扫码登录 -->
+    <div id="CodeLogin" class="formbox phonebox"
+      style="display: none; overflow: hidden;">
+
+      <!-- 扫二维码 -->
+      <div class="scanning_code" style="display: block;"
+        id="SearchCodeStep">
+        <h5>请使用艺龙APP扫码登录</h5>
+
+        <div class="pic_code">
+          <img id="qrImg"
+            src="/passport/qrCode?sessionGuid=f89d274a-2707-41e7-a845-9cc7219fdcfd"
+            width="185" height="185">
+        </div>
+        <div class="pic_code2"
+          style="left: 0px; display: none; position: absolute; top: 85px;">
+          <div class="animate_wrap"
+            style="width: 100px; height: 100px; top: 0px; display: block">
+            <img alt="" src="/passport/img/show_anima.png">
+          </div>
+        </div>
+
+        <div class="e_code_help" id="help">
+          <a class="mt10" href="javascript:;" method="showHelp">使用帮助</a>
+        </div>
+      </div>
+      <!-- 扫二维码 -->
+
+
+
+
+    </div>
+    <!-- 扫码登录 -->
+
+    <div id="NoCodeLogin" class="formbox phonebox errorBox"
+      style="display: block">
+      <!-- 
+                <div id="HKTip" class="el-poptip"
+                     style="width: 265px; position: absolute; left: 108px; top: -28px;">
+                    <div class="el-poptip-shadow">
+                        <div class="el-poptip-container">
+
+                            <div class="el-poptip-arrow el-poptip-arrow-7">
+                                <em>◆</em> <span>◆</span>
+                            </div>
+
+                            <a href="javascript:;" class="el-poptip-close"
+                               onclick="$('#HKTip').hide()">×</a>
+
+                            <p>港澳台手机用户请使用“手机动态密码登录”</p>
+                        </div>
+
+                    </div>
+                </div>
+            -->
+      <div class="nav_login_user" id="LoginTypeChoose">
+        <label> <input name="loginType" type="radio"
+          method="normalLogin" checked="checked" onclick="yanz1()">
+            普通登录 </label> <label> <span> <input name="loginType"
+            type="radio" method="dynamicLogin" onclick="yanz2()">手机动态密码登录
+          </span>
+        </label>
+      </div>
+      <form action="LoginServlet" method="post">
+        <div id="ElongLogin" language="cn">
+          <div class="inputbox login_id">
+            <input class="blur" type="text" name="userName"
+              id="UserName" placeholder="请输入用户名" />
+
+            <div class="input_tip" name="accounterrortip"
+              style="display: none;">您输入的用户名和密码不匹配，请重新输入！</div>
+          </div>
+
+          <div class="inputbox login_pw" id="password_tip">
+            <input class='blur' type='password' name='password'
+              placeholder='请输入密码'>
+          </div>
+          <div id="anniu" align="right" style="margin-bottom: 0">
+
+          </div>
+          <div class="forget">
+            <a href="reg.html"><input type="button" value="注册" /></a>
+          </div>
+          <div class="inputbox login_pw" id="password_tip">
+            <input
+              style="width: 285px; font: 18px Microsoft YaHei; display: block; height: 40px; text-align: center line-height: 40px; background-color: #ff8800; border-radius: 2px; margin-top: 20px;"
+              class="blur" type="submit" value="登录" />
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--底部-->
+    <div class="footer">
+      <p class="mobile">
+        <a class="iphone"
+          href="http://promotion.elong.com/index/cn/2016/elong_app_down/index.html"
+          target="_blank"><span class="icon"></span>iPhone / iPad</a> <a
+          href="http://promotion.elong.com/index/cn/2016/elong_app_down/index.html"
+          target="_blank" class="android"><span class="icon"></span>Android</a>
+      </p>
+
+      <p>
+        <a
+          href="http://promotion.elong.com/hotel/cn/elongagent/elongagent.html">代理合作</a>|
+        <a
+          href="http://promotion.elong.com/web/adservice/adservice.html">广告服务</a>|
+        <a href="http://promotion.elong.com/web/contact/contact.html">联系我们</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;©
+        2000 - 2017 河南王文博有限公司, eLong, Inc or its affiliates. All Rights
+        Reserved.
+      </p>
+      <input type="hidden" id="loginLevel" value="2" />
+    </div>
+    <!--底部-->
+
+
+    <script type="text/javascript">
+					var LoginController = {
+						nextUrl : "http:\/\/hotel.elong.com\/hotel-chain\/32.html?semwp=chain&semid=pcsemtest6&match_type=1&semtcid=7d8b78f4-a719-48a7-a4f1-5cebd5c59955",
+						targetUrl : null,
+						language : "cn",
+						existGuid : false,
+						callBackName : "jsonpCallback",
+						regBoxDes : {
+							"RegBox_Registing" : "\u6CE8\u518C\u4E2D",
+							"SmsCodeSendFail" : "\u9A8C\u8BC1\u7801\u53D1\u9001\u5931\u8D25\uFF0C\u70B9\u51FB\u91CD\u65B0\u83B7\u53D6",
+							"RegBox_Mobile_Des" : "\u624B\u673A\u53F7",
+							"RegBox_SmsCode_Error" : "\u77ED\u4FE1\u9A8C\u8BC1\u7801\u9519\u8BEF\uFF0C\u8BF7\u91CD\u65B0\u8F93\u5165",
+							"RegBox_Email_Null" : "\u90AE\u7BB1\u6709\u8BEF",
+							"RegBox_Mobile_Error" : "\u8BF7\u8F93\u5165\u6B63\u786E\u7684\u624B\u673A\u53F7",
+							"SmsCode_ReachCountLimit" : "\u60A8\u5DF2\u8FBE\u5230\u4ECA\u5929\u83B7\u53D6\u9A8C\u8BC1\u7801\u7684\u6700\u9AD8\u6B21\u6570",
+							"RegBox_MobileError" : "\u624B\u673A\u53F7\u5DF2\u88AB\u4F7F\u7528\uFF0C\u8BF7\u66F4\u6362\u5176\u4ED6\u624B\u673A\u53F7",
+							"lang" : "cn",
+							"RegBox_Password_LengthError" : "\u5BC6\u7801\u57286-30\u4E2A\u5B57\u7B26\u6216\u6570\u5B57\u5185",
+							"RegBox_BothPassword_Error" : "\u4E24\u6B21\u8F93\u5165\u5BC6\u7801\u4E0D\u4E00\u81F4",
+							"RegValidateMobile_HadReg_Error" : "\u624B\u673A\u53F7\u5DF2\u88AB\u4F7F\u7528\uFF0C\u8BF7\u66F4\u6362\u5176\u4ED6\u53F7\u7801\u3002",
+							"SmsCode_GetSmsAfter" : "\u79D2\u540E\u91CD\u65B0\u83B7\u53D6",
+							"RegBox_Password_Null" : "\u5BC6\u7801\u4E0D\u80FD\u4E3A\u7A7A",
+							"RegBox_Validate_Error" : "\u8BF7\u8F93\u5165\u6B63\u786E\u9A8C\u8BC1\u7801",
+							"RegBox_Mobile_Null" : "\u8BF7\u8F93\u5165\u624B\u673A\u53F7",
+							"SmsCode_GetSmsCodeDes" : "\u83B7\u53D6\u77ED\u4FE1\u9A8C\u8BC1\u7801",
+							"SmsCodeDisabled" : "\u9A8C\u8BC1\u7801\u5DF2\u5931\u6548\uFF0C\u8BF7\u91CD\u65B0\u83B7\u53D6",
+							"RegBox_Mobile_HagReg" : "\u8BE5\u624B\u673A\u53F7\u5DF2\u88AB\u6CE8\u518C",
+							"RegBox_SixOr30Char" : "6-30\u4E2A\u5B57\u7B26\u6216\u6570\u5B57\u7EC4\u6210\uFF0C\u8BF7\u91CD\u65B0\u8F93\u5165",
+							"RegBox_SmsCode_Null" : "\u8BF7\u8F93\u5165\u77ED\u4FE1\u9A8C\u8BC1\u7801",
+							"RegBox_Regist_Now" : "\u7ACB\u5373\u6CE8\u518C",
+							"RegValidateMobile_Input_Error" : "\u8BF7\u8F93\u5165\u6B63\u786E\u7684\u624B\u673A\u53F7\u3002",
+							"RegSystemDefault" : "\u7CFB\u7EDF\u7E41\u5FD9\uFF0C\u8BF7\u7A0D\u540E\u518D\u8BD5\uFF01",
+							"RegBox_MobileAndEmail_Null" : "\u90AE\u7BB1\/\u624B\u673A\u53F7",
+							"RegBox_Password_Similar" : "\u5BC6\u7801\u4E0E\u5DF2\u5F55\u5165\u7684\u624B\u673A\u53F7\u6216\u90AE\u7BB1\u76F8\u4F3C",
+							"RegBox_Validate_Null" : "\u8BF7\u8F93\u5165\u56FE\u5F62\u9A8C\u8BC1\u7801",
+							"SmsCodeOutOfDate" : "\u9A8C\u8BC1\u7801\u5DF2\u5931\u6548\uFF0C\u8BF7\u91CD\u65B0\u83B7\u53D6",
+							"SmsCode_MultiPhone" : "\u5BF9\u4E0D\u8D77\uFF0C\u60A8\u7684\u624B\u673A\u53F7\u7ED1\u5B9A\u591A\u4E2A\u827A\u9F99\u8D26\u53F7\uFF0C\u8BF7\u66F4\u6362\u624B\u673A\u53F7",
+							"RegBox_RePassword_Null" : "\u8BF7\u91CD\u65B0\u8F93\u5165\u5BC6\u7801",
+							"SmsCode_OtherError" : "\u51FA\u73B0\u5176\u4ED6\u9519\u8BEF\uFF0C\u8BF7\u91CD\u65B0\u83B7\u53D6",
+							"RegBox_Validate_Des" : "\u9A8C\u8BC1\u7801",
+							"RegBox_EmailError" : "\u90AE\u7BB1\u5DF2\u88AB\u4F7F\u7528\uFF0C\u8BF7\u66F4\u6362\u5176\u4ED6\u90AE\u7BB1",
+							"SmsCodeTimeLimit" : "\u4E00\u5206\u949F\u5185\u83B7\u53D6\u9A8C\u8BC1\u7801\u592A\u9891\u7E41\uFF0C\u8BF7\u7A0D\u540E\u83B7\u53D6",
+							"SmsCodeInputError" : "\u9A8C\u8BC1\u7801\u8F93\u5165\u9519\u8BEF"
+						}
+					};
+					var pageController = LoginController;
+					function yanz1() {
+						$("#UserName").attr("placeholder", "请输入用户名")
+						$("#password_tip")
+								.html(
+										"<input class='blur' type='password' name='password' placeholder='请输入密码'>")
+						$("#anniu").html("");
+					}
+					function yanz2() {
+						$("#UserName").attr("placeholder", "请输入手机号码")
+						$("#password_tip")
+								.html(
+										"<input class='blur' type='password' name='password' placeholder='请输入验证码'>")
+						$("#anniu")
+								.html(
+										"<a href='#'><input type='button' value='发送验证码' onclick='yanzhen()'></a> ")
+					}
+						var abcs = parseInt(Math.random() * 1000000)
+					function yanzhen() {
+						if ($("#UserName").val() == "") {
+							alert("请输入手机号码")
+						} else {
+							alert("验证码: " + abcs)
+						}
+					}
+				</script>
+    <script type="text/javascript" src="js/jquery1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/duhurisk.min.js?v=2019112219"></script>
+    <script type="text/javascript"
+      src="js/common-js/require2.1.16.min.js"></script>
+    <script type="text/javascript" src="bootstrap3/js/bootstrap.js"></script>
+    <script type="text/javascript" src="bootstrap3/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+      src="bootstrap3/js/css3-mediaqueries.js"></script>
+    <script type="text/javascript" src="bootstrap3/js/holder.js"></script>
+    <script type="text/javascript" src="bootstrap3/js/html5shiv.min.js"></script>
+</body>
+</html>

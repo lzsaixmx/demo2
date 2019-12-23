@@ -1,0 +1,28 @@
+@charset "UTF-8";
+nav{
+	background-image: url("../images/th.jpg");
+}
+.row1{
+	 /* 添加省略号 */
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    /* 设置行数  */
+    -webkit-line-clamp:1;
+    overflow: hidden;/* 超出隐藏 */
+}
+.row4{
+	 /* 添加省略号 */
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    /* 设置行数  */
+    -webkit-line-clamp:4;
+    overflow: hidden;/* 超出隐藏 */
+}
+/* 调整输入框的宽度 */
+#search_input{
+	width: 180px;
+	
+}
+
+
+

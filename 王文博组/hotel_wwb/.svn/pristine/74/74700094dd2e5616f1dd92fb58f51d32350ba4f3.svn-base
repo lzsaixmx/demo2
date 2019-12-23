@@ -1,0 +1,24 @@
+package hotel_wwb;
+
+import java.util.List;
+
+import org.apache.tomcat.jni.User;
+import org.junit.Test;
+
+import cn.tedu.dao.UserDao;
+import cn.tedu.entity.UserInfo;
+
+/**   
+ * @包名 hotel_wwb 
+ * @作者名 XM Yang   
+ * @时间 2019年11月26日 下午8:03:12 
+ */
+public class S {
+	@Test
+	public void ss() {
+		UserDao u = new UserDao();
+		UserInfo user=new UserInfo("yxm","4759");
+		List<UserInfo> u1=u.login(user);
+		System.out.println(u1);
+	}
+}

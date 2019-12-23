@@ -1,0 +1,1412 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #36c;
+}
+
+a:hover {
+	color: #f60;
+}
+
+.clear {
+	clear: both;
+	height: 0;
+	line-height: 0;
+	margin: 0 auto;
+	font-size: 1px;
+}
+
+.clx {
+	*zoom: 1;
+}
+
+.clx:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	color: #131313;
+}
+
+.none {
+	display: none;
+}
+
+.ml135 {
+	margin-left: 135px;
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+
+.cf00 {
+	color: #f00;
+}
+
+.cf60 {
+	color: #f60;
+}
+
+.tc {
+	text-align: center;
+}
+
+.tr {
+	text-align: right;
+}
+
+.h100 {
+	height: 100px;
+}
+
+body {
+	background-color: #e8eff6;
+}
+
+.icon {
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../pic/myelong_login.png) no-repeat;
+}
+
+.head, .container, .footer {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.head {
+	height: 50px;
+	padding: 25px 0;
+}
+
+.head h1 {
+	float: left;
+	height: 44px;
+	margin-left: 23px;
+	padding-left: 13px;
+	border-left: 1px solid #CCC;
+	color: #555;
+	font: 24px/44px Microsoft YaHei;
+}
+
+.container {
+	width: 940px;
+	background-color: #fff;
+	position: relative;
+	padding: 36px 30px;
+}
+
+.footer {
+	text-align: center;
+	padding: 50px 0 30px;
+}
+
+.footer p {
+	color: #555;
+	font-size: 12px;
+	line-height: 30px;
+}
+
+.footer p a {
+	color: #555;
+	font-size: 12px;
+	margin: 0 5px;
+}
+
+.footer p a:hover {
+	color: #f60;
+}
+
+.footer .mobile a span {
+	width: 18px;
+	height: 22px;
+	margin: 0 5px 0 30px;
+}
+
+.footer .mobile a.iphone span.icon {
+	background-position: 0 -277px;
+}
+
+.footer .mobile a.android span.icon {
+	background-position: -25px -276px;
+}
+
+.footer .mobile a.windows span.icon {
+	background-position: -50px -277px;
+}
+
+.footer .mobile a.other span.icon {
+	background-position: -77px -277px;
+}
+
+.footer .mobile a.iphone:hover span.icon {
+	background-position: 0 -304px;
+}
+
+.footer .mobile a.android:hover span.icon {
+	background-position: -25px -303px;
+}
+
+.footer .mobile a.windows:hover span.icon {
+	background-position: -50px -304px;
+}
+
+.footer .mobile a.other:hover span.icon {
+	background-position: -77px -304px;
+}
+
+.head .logo {
+	width: 113px;
+	height: 48px;
+	float: left;
+	background: url(../pic/myelong_login.png) no-repeat 0 0;
+}
+
+.container .tip_pic {
+	width: 300px;
+	height: 150px;
+	position: absolute;
+	right: -15px;
+	top: -100px;
+	z-index: 2;
+}
+
+.container .tip_pic .tip_icon {
+	float: left;
+	width: 150px;
+	height: 82px;
+	background: url(../pic/myelong_login.png) no-repeat -135px -4px;
+	margin-top: 16px;
+}
+
+.container .tip_pic .tip_txt {
+	float: left;
+	width: 141px;
+	height: 128px;
+	background: url(../pic/myelong_login.png) no-repeat -193px -95px;
+	margin-top: 22px;
+	margin-left: 6px;
+}
+
+.container h1.title {
+	color: #555;
+	white-space: nowrap;
+}
+
+.container h1.title label {
+	font-size: 24px;
+	font-family: Microsoft YaHei, SimHei, Arial, Helvetica, sans-serif;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.container h1.title span {
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.container h1.title a {
+	font-size: 14px;
+	font-weight: normal;
+}
+
+#CooperationCard {
+	width: 600px;
+	border-bottom: 1px dashed #e0e0e0;
+}
+
+#CooperationCard .haveCard {
+	font-size: 12px;
+	margin-top: 35px;
+}
+
+#CooperationCard .haveCard input {
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+#CooperationCard .Card {
+	width: 600px;
+	padding-top: 20px;
+	line-height: 30px;
+	*padding-bottom: 20px;
+}
+
+#CooperationCard .Card .cf00 {
+	vertical-align: sub;
+	*vertical-align: middle;
+}
+
+#CooperationCard .Card dt {
+	width: 135px;
+	float: left;
+	text-align: right;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 20px;
+	font-size: 14px;
+	color: #555;
+	clear: left;
+}
+
+#CooperationCard .Card dd {
+	width: 460px;
+	float: left;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+
+#CooperationCard .Card dd select {
+	width: 250px;
+	height: 30px;
+	padding: 4px 0;
+	border: 1px solid #bbb;
+	_margin-top: 5px;
+}
+
+#CooperationCard .Card dd input {
+	width: 248px;
+	height: 16px;
+	line-height: 16px;
+	border: 1px solid #bbb;
+	padding: 6px 0;
+}
+
+#CooperationCard .Card dd .nowrap {
+	width: 255px;
+	float: right;
+	font-size: 12px;
+	color: #999;
+	font-style: normal;
+	line-height: 16px;
+	text-align: left;
+	*margin-top: -31px;
+}
+
+.FillMge {
+	padding-top: 20px;
+}
+
+.FillMge li {
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.FillMge li p {
+	float: left;
+	width: 135px;
+	text-align: right;
+	font-size: 14px;
+	color: #555;
+	height: 30px;
+	line-height: 30px;
+	white-space: nowrap;
+}
+
+.FillMge li span span.icon {
+	height: 16px;
+	line-height: 16px;
+	padding-left: 20px;
+	font-size: 12px;
+	color: #999;
+	margin-top: 7px;
+}
+
+.FillMge li span span.input_right {
+	background-position: -315px -229px;
+}
+
+.FillMge li span span.messcode {
+	width: 120px;
+	height: 30px;
+	float: left;
+	font: 14px/30px Microsoft Yahei;
+	background-color: #37D;
+	color: #FFF;
+	text-align: center;
+	margin: 0 5px 0 8px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.FillMge li span span.messcode:hover {
+	background-color: #114387;
+}
+
+.FillMge li span span.remesscode, .FillMge li span span.remesscode:hover
+	{
+	background-color: #999;
+	cursor: default;
+}
+
+.FillMge li span span.input_wrong {
+	background-position: -315px -248px;
+}
+
+.FillMge li span span.input_remind {
+	background-position: -315px -267px;
+}
+
+.FillMge li span input {
+	width: 248px;
+	height: 16px;
+	font-size: 14px;
+	line-height: 16px;
+	border: 1px solid #bbb;
+	padding: 6px 0;
+	float: left;
+}
+
+.FillMge li span input.vCode {
+	width: 118px;
+	vertical-align: middle;
+}
+
+.FillMge li span input.phone_input {
+	width: 128px;
+}
+
+.FillMge li a {
+	font-size: 12px;
+}
+
+.FillMge li img {
+	vertical-align: middle;
+	margin: 0 3px 0 8px;
+}
+
+.FillMge li.pass_level tt {
+	display: block;
+	border: 1px solid #ff7d00;
+	height: 5px;
+	line-height: 5px;
+	width: 120px;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	margin-left: 135px;
+}
+
+.FillMge li.pass_level i {
+	margin-left: 135px;
+	font-style: normal;
+	display: block;
+	margin-top: 8px;
+	font-size: 12px;
+	clear: both;
+}
+
+.FillMge li.pass_level s {
+	display: inline-block;
+	background: #fff;
+	height: 5px;
+	overflow: hidden;
+	width: 40px;
+	padding: 0;
+	margin: 0;
+}
+
+.FillMge li.pass_level s.low {
+	background: #ffa22a;
+}
+
+.FillMge li.pass_level s.normal {
+	background: #f28900;
+}
+
+.FillMge li.pass_level s.high {
+	background: #e28000;
+}
+
+.phonenum_wrap {
+	height: 28px;
+	overflow: visible !important;
+}
+
+.phonenum {
+	width: 105px;
+	height: 28px;
+	float: left;
+	background: url(../pic/midify_tel.png) no-repeat 75px -1px;
+	border: 1px solid #ccc;
+	margin: 0 8px 0 0;
+	line-height: 28px;
+	cursor: pointer;
+	padding: 0 0 0 5px;
+	position: relative;
+	overflow: visible;
+	font-size: 12px;
+	z-index: 11;
+}
+
+.phonenum:hover {
+	background: url(../pic/midify_tel.png) no-repeat 75px -43px;
+}
+
+.phonenum ul {
+	width: 100%;
+	border: 1px solid #ccc;
+	position: absolute;
+	left: -1px;
+	top: 28px;
+}
+
+.phonenum ul li {
+	height: 28px;
+	background-color: #FFF;
+	padding: 0 5px;
+	margin-bottom: 0;
+}
+
+.phonenum ul li:hover {
+	background-color: #EAEAEA;
+}
+
+.inputbox .phonenum {
+	height: 33px;
+	line-height: 33px;
+	background-position: 75px 0;
+	border-radius: 2px;
+}
+
+.inputbox .phonenum:hover {
+	background-position: 75px -42px;
+}
+
+.inputbox .phonenum ul {
+	top: 33px;
+	border-radius: 2px;
+	overflow: hidden;
+}
+
+.inputbox .phonenum ul li {
+	line-height: 28px;
+}
+
+#validateImg {
+	vertical-align: middle;
+}
+
+#OnAddition {
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #999;
+}
+
+#OnAddition a {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+	color: #555;
+	padding: 0 10px;
+	height: 30px;
+	line-height: 30px;
+	background: #f8f8f8;
+	border: 1px solid #d9d9d9;
+	border-bottom: 1px solid #f8f8f8;
+	_padding: 4px 10px;
+	_height: 14px;
+	*position: relative;
+	*z-index: 2;
+	_top: 1px;
+}
+
+#OnAddition a span.com_show {
+	font-family: Microsoft YaHei, SimHei, Arial, Helvetica, sans-serif;
+	display: inline-block;
+	width: 7px;
+	height: 4px;
+	background: url(../pic/myelong_login.png) no-repeat -56px -82px;
+	_background: url(../pic/myelong_login.png) no-repeat -56px -75px;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+#OnAddition a span.com_hide {
+	font-family: Microsoft YaHei, SimHei, Arial, Helvetica, sans-serif;
+	display: inline-block;
+	width: 7px;
+	height: 4px;
+	background: url(../pic/myelong_login.png) no-repeat -66px -82px;
+	_background: url(../pic/myelong_login.png) no-repeat -66px -75px;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+.addition {
+	background-color: #f8f8f8;
+	width: 530px;
+	border: 1px solid #d9d9d9;
+	padding: 12px;
+}
+
+.addition dt {
+	width: 140px;
+	float: left;
+	font-size: 12px;
+	clear: left;
+	height: 30px;
+	line-height: 30px;
+}
+
+.addition dd {
+	height: 30px;
+	line-height: 30px;
+}
+
+.addition dd label {
+	line-height: 30px;
+	font-size: 12px;
+	vertical-align: middle;
+}
+
+.addition dd input {
+	margin-right: 5px;
+}
+
+.l_black {
+	color: #999;
+	font-size: 12px;
+}
+
+.agree {
+	padding: 20px 0 10px 0;
+	font-size: 12px;
+	line-height: 14px;
+	color: #555;
+}
+
+.agree input {
+	vertical-align: middle;
+	margin-right: 3px;
+	_margin-top: -3px;
+}
+
+.agree .wrong {
+	height: 16px;
+	line-height: 16px;
+	display: inline-block;
+	*line-height: 17px;
+	*margin-top: -16px;
+	padding-left: 20px;
+	background-position: -315px -248px;
+	cursor: pointer;
+	vertical-align: -4px;
+	*vertical-align: -1px;
+	_vertical-align: 1px;
+}
+
+.Treaty {
+	width: 530px;
+	border: 1px solid #d9d9d9;
+	padding: 12px;
+	height: 120px;
+	overflow: auto;
+	font-size: 12px;
+	color: #555;
+	line-height: 16px;
+}
+
+.submitBtn {
+	font-family: Microsoft YaHei, SimHei, Arial, Helvetica, sans-serif;
+	display: block;
+	border: none;
+	background: url(../pic/myelong_login.png) no-repeat 0 -348px;
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	font-size: 18px;
+	margin-top: 30px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.submitBtn:hover {
+	color: #fff;
+	background-position: 0 -388px;
+}
+
+.submitBtn span {
+	width: 68px;
+	margin: 0 auto;
+	display: inline-block;
+	text-align: left;
+}
+
+.successBox {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.successBox h1 {
+	font-size: 24px;
+	font-family: Microsoft YaHei, SimHei, Arial, Helvetica, sans-serif;
+	padding: 10px 0 0 175px;
+	color: #555;
+}
+
+.successBox h1.en {
+	padding-left: 80px;
+}
+
+.successBox h1 span.icon {
+	width: 40px;
+	height: 40px;
+	background-position: -2px -75px;
+	margin-right: 10px;
+}
+
+.successBox p {
+	padding: 0 0 20px 175px;
+	font: 18px Microsoft YaHei, SimHei, Arial, Helvetica, sans-serif;
+	color: #555;
+}
+
+.successBox p span {
+	color: #ff6315;
+}
+
+.successBox p span a {
+	background: #36c;
+	border-radius: 3px;
+	color: #fff;
+	display: inline-block;
+	font-family: microsoft yahei;
+	line-height: 100%;
+	padding: .5em 1em;
+	text-align: center;
+	text-decoration: none;
+}
+
+.successBox p .suc {
+	width: 98px;
+	height: 71px;
+	padding: 34px 5px 0 21px;
+	display: inline-block;
+	font: 14px/22px Simsun;
+	font-style: normal;
+	background: url(../pic/myelong_login.png) no-repeat 0 -460px;
+	*vertical-align: -20px;
+}
+
+.successBox p span a:hover {
+	background: #148;
+}
+
+.successBox p a {
+	font-size: 14px;
+	margin: 0 10px;
+}
+
+.successBox div.mailBox {
+	width: 640px;
+	height: 80px;
+	background-color: #fffadd;
+	line-height: 80px;
+	text-align: center;
+	position: relative;
+	color: #555;
+	margin: 20px 0 40px 0;
+	font-size: 16px;
+	font-family: Microsoft YaHei, SimHei, Arial, Helvetica, sans-serif;
+}
+
+.successBox div.mailBox span a {
+	font-size: 14px;
+}
+
+.successBox div.mailBox span.icon {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-position: 0 -132px;
+}
+
+.container .m_pic {
+	width: 1000px;
+	text-align: center;
+	margin-left: -30px;
+	margin-bottom: -30px;
+}
+
+.successBox .mt100 {
+	margin-top: 100px;
+}
+
+.successBox p.pn {
+	padding: 0 0 20px 155px;
+	line-height: 100px;
+	margin-bottom: 100px;
+}
+
+.loginbox {
+	width: 1000px;
+	height: 350px;
+	margin: 0 auto;
+	background-color: #fff;
+	position: relative;
+	zoom: 1;
+}
+
+.regbtn {
+	text-align: right;
+	width: 1000px;
+	margin: -30px auto 10px auto;
+}
+
+.regbtn a {
+	font-size: 16px;
+	font-weight: bolder;
+}
+
+.loginbox .pic {
+	width: 620px;
+	height: 350px;
+	float: left;
+}
+
+.loginbox .pic a img:hover {
+	opacity: .9;
+}
+
+.loginbox .formbox {
+	width: 285px;
+	height: 322px;
+	padding: 24px 45px 0;
+	float: right;
+	*height: 325px;
+	*padding-top: 20px;
+	position: relative;
+}
+
+.loginbox .formbox h1 {
+	font-size: 18px;
+	color: #555;
+	font-family: Microsoft YaHei, SimHei, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.loginbox .formbox .inputbox {
+	position: relative;
+	width: 100%;
+	height: 35px;
+}
+
+.loginbox .formbox .en_style {
+	white-space: nowrap;
+}
+
+.loginbox .formbox .inputbox .icon {
+	width: 30px;
+	height: 30px;
+	margin-left: 6px;
+}
+
+.loginbox .formbox .inputbox .input_tip {
+	width: 277px;
+	padding-left: 6px;
+	background-color: #FFEEED;
+	border: 1px solid #FFD1CF;
+	color: #E61300;
+	font-size: 12px;
+	line-height: 18px;
+	position: absolute;
+	top: 35px;
+	left: 0;
+	z-index: 10;
+}
+
+.loginbox .formbox .inputbox .input_tip_yzm {
+	width: 277px;
+}
+
+.loginbox .formbox .inputbox input {
+	box-shadow: inset 0 4px 9px -5px rgba(0, 0, 0, .2);
+	position: absolute;
+	z-index: 2;
+	width: 237px;
+	height: 21px;
+	line-height: 21px;
+	padding: 6px 15% 6px 3px;
+	left: 0;
+	top: 0;
+	background-color: transparent;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	color: #ccc;
+	font-size: 14px;
+}
+
+.loginbox .formbox .login_code input {
+	padding-right: 3px;
+}
+
+.loginbox .formbox .inputbox input.blur {
+	color: #999;
+}
+
+.loginbox .formbox .inputbox input:focus, .loginbox .formbox .inputbox input.focus
+	{
+	box-shadow: none;
+	color: #555;
+}
+
+.loginbox .formbox .login_id {
+	margin-top: 20px;
+	*z-index: 10;
+}
+
+.loginbox .formbox .login_pw {
+	margin-top: 20px;
+}
+
+.loginbox .formbox .login_code {
+	display: none;
+}
+
+.loginbox .errorBox .login_id {
+	margin-top: 5px;
+}
+
+.loginbox .errorBox .login_pw {
+	margin-top: 20px;
+}
+
+.loginbox .errorBox .login_code {
+	margin-top: 20px;
+	display: block;
+}
+
+.loginbox .formbox .login_code img {
+	margin-left: 158px;
+	vertical-align: middle;
+	width: 70px;
+	height: 35px;
+}
+
+.loginbox .formbox .login_code a {
+	font-size: 12px;
+	margin-left: 5px;
+}
+
+.loginbox .formbox span.tip {
+	position: absolute;
+	display: none;
+}
+
+.loginbox .formbox .err span.tip {
+	display: block;
+	color: #f60;
+	font-size: 12px;
+	bottom: -17px;
+	left: 0;
+}
+
+.loginbox .formbox .login_id .icon {
+	background-position: -108px -271px;
+	float: right;
+}
+
+.loginbox .formbox .login_pw .icon {
+	background-position: -135px -271px;
+	float: right;
+}
+
+.loginbox .formbox .login_code input {
+	width: 139px;
+}
+
+.loginbox .formbox .err input {
+	border: 1px solid #E81300;
+}
+
+.loginbox .formbox .forget {
+	height: 12px;
+	line-height: 12px;
+	width: 285px;
+}
+
+.loginbox .formbox .forget {
+	margin-top: 20px;
+}
+
+.loginbox .errorBox .forget {
+	margin: 20px 0 13px 0;
+}
+
+.loginbox .formbox .forget span {
+	font-size: 12px;
+	color: #555;
+	float: left;
+	line-height: 12px;
+}
+
+.loginbox .formbox .forget span input {
+	vertical-align: middle;
+	margin-right: 4px;
+}
+
+.loginbox .formbox .forget a {
+	font-size: 12px;
+	float: right;
+	vertical-align: middle;
+}
+
+.loginbox .formbox .forget .icon {
+	width: 12px;
+	height: 12px;
+	margin-right: 3px;
+	*height: 14px;
+}
+
+.loginbox .formbox .forget .on {
+	background-position: -55px -102px;
+	*background-position: -55px -102px;
+	_background-position: -55px -102px;
+}
+
+.loginbox .formbox .forget .off {
+	background-position: -67px -102px;
+	*background-position: -67px -101px;
+	_background-position: -67px -102px;
+}
+
+.loginbox .formbox .loginbtn {
+	font: 18px Microsoft YaHei;
+	display: block;
+	text-align: center;
+	width: 285px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	background-color: #f80;
+	border-radius: 2px;
+	margin-top: 20px;
+}
+
+.loginbox .formbox .loginbtn:hover {
+	background-color: #e60;
+}
+
+.loginbox .formbox .login_style {
+	width: 330px;
+	height: 28px;
+	font-size: 12px;
+	color: #555;
+}
+
+.loginbox .formbox .login_style {
+	margin-top: 20px;
+}
+
+.loginbox .formbox .login_style span {
+	margin-right: 10px;
+}
+
+.loginbox .errorBox .login_style {
+	margin-top: 20px;
+}
+
+.loginbox .errorBox .login_style span {
+	margin-right: 10px;
+}
+
+.loginbox .formbox .login_style a {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: 20px;
+	cursor: pointer;
+	text-indent: -9999em;
+}
+
+.loginbox .formbox .en_style a {
+	margin-left: 6px;
+}
+
+.loginbox .formbox .login_style a.s_weixin {
+	background-position: -160px -214px;
+}
+
+.loginbox .formbox .login_style a.s_qq {
+	background-position: 0 -214px;
+}
+
+.loginbox .formbox .login_style a.s_sina {
+	background-position: -40px -214px;
+}
+
+.loginbox .formbox .login_style a.s_zfb {
+	background-position: -80px -214px;
+}
+
+.loginbox .formbox .login_style a.s_renren {
+	background-position: -120px -214px;
+}
+
+.loginbox .formbox .login_style a.s_weixin:hover {
+	background-position: -160px -243px;
+}
+
+.loginbox .formbox .login_style a.s_qq:hover {
+	background-position: 0 -243px;
+}
+
+.loginbox .formbox .login_style a.s_sina:hover {
+	background-position: -40px -243px;
+}
+
+.loginbox .formbox .login_style a.s_zfb:hover {
+	background-position: -80px -243px;
+}
+
+.loginbox .formbox .login_style a.s_renren:hover {
+	background-position: -120px -243px;
+}
+
+.register_tip {
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
+	height: 15px;
+	padding-right: 12px;
+	text-align: right;
+	color: #999;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.register_tip a {
+	margin-left: 5px;
+	color: #3365CB;
+}
+
+.register_tip a:hover {
+	color: #FF6500;
+}
+
+.register_tip a i {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	vertical-align: -4px;
+	*vertical-align: middle;
+	margin-left: 3px;
+	background: url(../pic/myelong_login.png) no-repeat 0 -430px;
+	overflow: hidden;
+}
+
+.register_tip a:hover i {
+	background-position: 0 -445px;
+}
+
+.nav_login_user {
+	height: 12px;
+	font: 12px/1 Arial;
+	color: #555;
+	margin-bottom: 20px;
+}
+
+.nav_login_user input {
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+.nav_login_user span {
+	margin-left: 40px;
+}
+
+.loginbox .phonebox .inputbox input.blur {
+	width: 274px;
+	padding-right: 2%;
+}
+
+.loginbox .phonebox .inputbox input.phonenum_input {
+	width: 157px;
+	left: 117px;
+}
+
+.loginbox .phonebox .phone_pw {
+	margin-top: 20px;
+}
+
+.loginbox .phonebox .phone_pw input.blur {
+	width: 160px;
+}
+
+.loginbox .phonebox .phone_pw .btn {
+	width: 110px;
+	height: 35px;
+	display: block;
+	float: right;
+	background-color: #37D;
+	color: #FFF;
+	border-radius: 5px;
+	text-align: center;
+	font: 14px/35px Microsoft Yahei;
+	cursor: pointer;
+}
+
+.loginbox .phonebox .phone_pw input.blur {
+	width: 160px;
+}
+
+.loginbox .phonebox .err input {
+	width: 139px !important;
+}
+
+.loginbox .phonebox .phone_pw .rebtn {
+	background-color: #999;
+}
+
+.loginbox .phonebox .mb50 {
+	margin-bottom: 50px;
+}
+
+.switch_btn {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	left: 950px;
+	z-index: 2;
+	overflow: hidden;
+}
+
+.switch_btn a {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	display: block;
+	cursor: pointer;
+}
+
+.switch_btn .a_one {
+	background: url(../pic/myelong_login.png) no-repeat -284px -298px;
+}
+
+.switch_btn .a_two {
+	background: url(../pic/myelong_login.png) no-repeat -284px -348px;
+	left: 50px;
+}
+
+.scanning_code {
+	width: 200px;
+	margin: 30px auto;
+}
+
+.scanning_code h5 {
+	color: #37d;
+	font: 18px/32px Microsoft Yahei;
+}
+
+.scanning_code .pic_code {
+	width: 200px;
+	height: 200px;
+	position: relative;
+}
+
+.scanning_code .pic_code .mask_login {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	filter: alpha(Opacity = 80);
+	background: rgba(255, 255, 255, .8);
+}
+
+.scanning_code .pic_code .mask_login a {
+	width: 160px;
+	height: 32px;
+	border-radius: 30px;
+	background: #49f;
+	display: block;
+	margin: 80px auto 0;
+	font: 18px/32px Microsoft Yahei;
+	text-align: center;
+	color: #fff;
+	border: 2px solid #49f;
+}
+
+.scanning_code .pic_code .mask_login a:hover {
+	width: 160px;
+	height: 32px;
+	border-radius: 30px;
+	background: #37d;
+	border: 2px solid #37d;
+	display: block;
+	margin: 80px auto 0;
+	font: 18px/32px Microsoft Yahei;
+	text-align: center;
+	color: #fff;
+}
+
+.scanning_code .pic_code img {
+	display: block;
+	padding: 7px;
+	width: 185px;
+	height: 185px;
+	background: url(../pic/login_bgg.png) no-repeat 0 0;
+}
+
+.scanning_code .e_code_help {
+	margin: 0;
+	text-align: center;
+	overflow: hidden;
+}
+
+.scanning_code .e_code_help p {
+	padding: 10px 0;
+}
+
+.scanning_code .e_code_help a {
+	border-radius: 16px;
+	border: 1px solid #cde;
+	padding: 3px 12px;
+	color: #555;
+	display: block;
+	width: 50px;
+	height: 16px;
+	line-height: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fff;
+}
+
+.scanning_code .e_code_help a:hover {
+	border-radius: 16px;
+	border: 1px solid #49f;
+	padding: 3px 12px;
+	color: #555;
+	display: block;
+	width: 50px;
+	height: 16px;
+	line-height: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #49f;
+	color: #fff;
+}
+
+.scanning_code .e_code_help2 {
+	margin: 0;
+}
+
+.scanning_code .pic_code2 {
+	background: url(../pic/login_bgg.png) no-repeat 0 -209px;
+	width: 265px;
+	height: 200px;
+	position: relative;
+	height: 210px;
+}
+
+.scanning_code .pic_code3 {
+	margin: 80px auto 0;
+}
+
+.scanning_code .pic_code3 h5 {
+	font: 24px/34px Microsoft Yahei;
+	color: #555;
+	text-align: center;
+}
+
+.scanning_code .pic_code3 h5 i {
+	background: url(../pic/myelong_login.png) no-repeat -284px -468px;
+	width: 50px;
+	height: 42px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.scanning_code .pic_code4 {
+	margin: 80px auto 0;
+}
+
+.scanning_code .pic_code4 h5 {
+	font: 24px/30px Microsoft Yahei;
+	color: #555;
+	text-align: center;
+	height: 40px;
+	overflow: hidden;
+}
+
+.scanning_code .pic_code4 h5 i {
+	background: url(../pic/myelong_login.png) no-repeat -293px -420px;
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.scanning_code .e_code_help2 a {
+	width: 160px;
+	height: 32px;
+	border-radius: 30px;
+	background: #49f;
+	display: block;
+	font: 18px/32px Microsoft Yahei;
+	text-align: center;
+	color: #fff;
+	border: 2px solid #49f;
+}
+
+.scanning_code .e_code_help2 a:hover {
+	width: 160px;
+	height: 32px;
+	border-radius: 30px;
+	background: #37d;
+	border: 2px solid #37d;
+	display: block;
+	font: 18px/32px Microsoft Yahei;
+	text-align: center;
+	color: #fff;
+}
+
+.animate_wrap {
+	width: 0;
+	height: 0;
+	position: absolute;
+	left: 154px;
+	top: 93px;
+}
+
+.animate_wrap img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.FillMge li span.promotion_ipt {
+	font-size: 12px;
+}
+
+.FillMge li span.promotion_ipt input.w20 {
+	width: 20px;
+	vertical-align: middle;
+	border: none;
+	float: none;
+}
+
+.FillMge li.promotion_ipt-mt {
+	margin-top: -10px;
+	margin-bottom: 10px;
+}

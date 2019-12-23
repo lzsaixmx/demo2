@@ -1,0 +1,42 @@
+package cn.tedu.dao;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import cn.tedu.entity.Room;
+import cn.tedu.utils.DBUtils;
+
+public class RoomDao {
+	public List<Room> emptyRoom() {
+		List<Room> list = new ArrayList<>();
+		try(
+			Connection conn = DBUtils.getConn();
+		){
+			Statement stat = conn.createStatement();
+			ResultSet result = stat.executeQuery("SELECT r.id,type,price FROM room r join room_type t where rend_out=0");
+			while(result.next())
+				list.add(new Room(result.getInt(1), 0, result.getInt(2), result.getDouble(3)));
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		return list;
+	}
+	
+	public List<Room> AllRoom(){
+		List<Room> list = new ArrayList<>();
+		try(
+			Connection conn = DBUtils.getConn();
+		){
+			Statement stat = conn.createStatement();
+			ResultSet result = stat.executeQuery("SELECT r.id,rend_out,type,price FROM room r join room_type t");
+			while(result.next())
+				list.add(new Room(result.getInt(1), result.getInt(2), result.getInt(3), result.getDouble(4)));
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		return list;
+	}
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>酒店简介</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="bootstrap3/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="bootstrap3/font-awesome-4.7.0/css/font-awesome.css"/>
+<style type="text/css">
+body{
+  background-color: rgba(99,174,12,0.4);
+}
+  .container{
+    background-color: rgba(54,100,50,0.5);
+    width: 900px;
+    height: 450px;
+    margin-top: 60px;
+  }
+  img{
+    width: 100%;
+  }
+  .c12{
+    position: absolute;
+    margin-left: 800px;
+    margin-top: 480px;
+    visibility: hidden;
+  }
+  .c11{
+    width: 300px;
+    height: 180px;  
+    background-color: rgba(140,20,86,0.6);
+  }
+  p,h5{
+    padding-top: 10px;
+    padding-left: 12px;
+  }
+ 
+</style>
+</head>
+<body>
+<div class="c12">
+  <div class="c11">
+    <p>本人是达内国际大酒店的老板 ，我叫王文博</p>
+    <p>以下是我的联系方式:</p>
+    <h5>电话: 383843809438</h5>
+    <h5>本人外号: 一条小萝卜</h5>
+  </div>
+</div>
+  <div class="container">
+  <h1 align="center">达内国际大酒店</h1>
+    <div class="row" >
+      <div class="col-md-7">
+       <img alt="国际大酒店" src="100.jpg">
+      </div>
+      <div class="col-md-5">
+        <div>
+          <h4><b style="color: red;">本酒店</b>自2013年上半年开始打造，与2019年下半年完工! 历时6年时间，终于在乌拉八龟客尔什石密比西小岛完美建成。</h4><br>
+          <h3>更多信息，请联系本酒店老板<a id="dd">王先生!</a></h3><br>
+          <h3>欢迎您去预定本酒店的<a href="HomeServlet">套房</a></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="bootstrap3/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap3/js/bootstrap.js"></script>
+<script type="text/javascript" src="bootstrap3/js/holder.js"></script>
+<script type="text/javascript" src="bootstrap3/js/html5shiv.min.js"></script>
+<script type="text/javascript" src="bootstrap3/js/css3-mediaqueries.js"></script>
+<script type="text/javascript" src="bootstrap3/js/respond.min.js"></script>
+<script type="text/javascript">
+	$("#dd").click(function(){
+		
+		$(".c12").css("z-index","-1");
+		$(".c12").css("visibility","visible")
+	});
+</script>
+</html>

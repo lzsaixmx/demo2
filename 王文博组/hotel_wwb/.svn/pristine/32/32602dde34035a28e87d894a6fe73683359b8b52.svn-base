@@ -1,0 +1,4 @@
+driver=com.mysql.jdbc.Driver
+url=jdbc:mysql://176.148.23.58:3306/hotel_management?useUnicode=true&characterEncoding=UTF-8
+username=root
+password=5712
